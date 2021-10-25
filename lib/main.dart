@@ -11,6 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
+      appBar: AppBar(
+        title: Text("Demo 3 Continer"),
+        centerTitle: true,
+      ),
       body: Center(
         child: Container(
           height: 300,
@@ -25,7 +29,7 @@ class MyApp extends StatelessWidget {
           padding: const EdgeInsets.all(50.0),
           margin: const EdgeInsets.all(10.0),
           child: const Text(
-            "Container Demo",
+            "Container ",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 30,
