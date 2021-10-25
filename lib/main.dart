@@ -11,7 +11,28 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      body: Container(),
+      body: Center(
+        child: Container(
+          height: 300,
+          width: 300,
+          alignment: Alignment.center,
+          decoration: const BoxDecoration(
+              color: Colors.amber,
+              borderRadius: BorderRadius.all(
+                  Radius.circular(40))), // shape: BoxShape.circle),
+
+          //color: Colors.amber,
+          padding: const EdgeInsets.all(50.0),
+          margin: const EdgeInsets.all(10.0),
+          child: const Text(
+            "Container Demo",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 30,
+            ),
+          ),
+        ),
+      ),
     ));
   }
 }
